@@ -76,6 +76,15 @@ h1, h2, h3, p, ul{
 .site-nav .link:focus {
     color: var(--acent-color);
 }
+.site-nav .item::after{
+    display: block;
+    content: " ";
+    width: 100%;
+    height: 4px;
+    background-color: var(--acent-color);
+    border-radius: 2px;
+    opacity: 1;
+}
 .feedback .link {
     display: inline-flex;
     align-items: center;
@@ -258,6 +267,29 @@ body{
     display: block;
     max-width: 100%;
     height: auto;
+}
+.actings-container{
+    position: relative;
+}
+.actings-post {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-bcg-color);
+}
+.actings-post-container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /*Team section*/
 .team{
