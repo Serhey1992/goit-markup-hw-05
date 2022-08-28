@@ -627,3 +627,82 @@ body{
     border-right: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
 }
+.thumb{
+    position: relative;
+}
+.thumb::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    opacity: 0;
+}
+.examples-text-conteiner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 322px;
+    height: 168px;
+    opacity: 0;
+}
+.examples-text{
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    
+    color: #FFFFFF;
+}
+.examples-link:hover .examples-text-conteiner,
+.examples-link:hover .thumb::before{
+    opacity: 1;
+}
+/* Бекдроп та модальне вікно */
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: end;
+    width: 528px;
+    height: 581px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+.button-close{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    margin-right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.close-icon {
+    width: 18px;
+    height: 18px;
+}
+.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+/* Бекдроп та модальне вікно кінець */
