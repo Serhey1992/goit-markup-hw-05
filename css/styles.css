@@ -78,9 +78,7 @@ h1, h2, h3, p, ul{
 
 }
 .site-nav .link:hover,
-.site-nav .link:focus{
-    color: var(--acent-color);
-}
+.site-nav .link:focus,
 .link.current{
     color: var(--acent-color);
 }
