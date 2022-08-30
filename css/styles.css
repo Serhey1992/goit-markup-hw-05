@@ -359,6 +359,9 @@ body{
     border: 0;
     border-radius: 50%;
     background-color: var(--primary-bcg-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-link:hover,
 .team-link:focus{
@@ -404,6 +407,9 @@ body{
     color: #AFB1B8;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customer-link:hover,
 .customer-link:focus{
@@ -585,6 +591,10 @@ body{
     font-size: 16px;
     line-height: 1.6;
     cursor: pointer;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button .nav-button:hover,
 .button .nav-button:focus{
@@ -638,6 +648,9 @@ body{
 .examples-link {
     display: block;
     text-decoration: none;
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+
 }
 .examples-container{
     padding: 20px 24px;
