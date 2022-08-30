@@ -81,6 +81,9 @@ h1, h2, h3, p, ul{
 .site-nav .link:focus{
     color: var(--acent-color);
 }
+.link.current{
+    color: var(--acent-color);
+}
 .link.current::after{
     position: absolute;
     left: 0;
@@ -91,7 +94,6 @@ h1, h2, h3, p, ul{
     height: 4px;
     background-color: var(--acent-color);
     border-radius: 2px;
-    opacity: 1; 
 }
 .feedback .link {
     display: inline-flex;
